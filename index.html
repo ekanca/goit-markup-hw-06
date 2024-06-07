@@ -11,7 +11,9 @@
         rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
-    <title>Ev Odevi 5</title>
+    <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/mobil.css" />
+    <title>Ev Odevi 6</title>
 </head>
 
 <body>
@@ -21,7 +23,7 @@
         <div class="container-header container">
             <nav class="nav-logo">
                 <a href="./index.html" class="logo">Web<span class="logo-span">Studio</span></a>
-                <ul class="nav-list">
+                <ul class="nav-list-one">
                     <li><a href="./index.html" class="nav-link studio">Studio</a></li>
                     <li><a href="" class="nav-link">Portfolio</a></li>
                     <li><a href="" class="nav-link">Contacts</a></li>
@@ -38,6 +40,13 @@
                     </li>
                 </ul>
             </address>
+
+            <button type="button" class="hamburgerbutton">
+                <svg width="30" height="30" class="hamburger">
+                    <use href="./images/icons.svg#icon-heroicons-solid_menu"></use>
+                </svg>
+            </button>
+
         </div>
     </header>
     <main>
@@ -56,33 +65,38 @@
 
        
 
-        <section class="second-section">
-            <div class="second-section-container container ">
-                <h2 class="visually-hidden second-section-title">Our Features</h2>
-                <ul class="second-section-list">
-                    <li class="second-section-list-two">
-                        <div class="second-section-icon">
-                            <svg width="64" height="64">
-                                <use href="./images/icons.svg#icon-antenna-1"></use>
-                             </svg>
-                        </div>
-                        <h3 class="section-title">Strategy</h3>
-                        <p class="description">
-                            Our goal is to identify the business problem to walk away with
-                            the perfect and creative solution.
-                        </p>
-                    </li>
+            <section class="second-section">
+                <div class="second-section-container container ">
+                    <h2 class="visually-hidden second-section-title">Our Features</h2>
+                    <ul class="second-section-list">
+                        <li class="second-section-list-two">
+                            <div class="second-section-icon">
+                                <svg width="64" height="64">
+                                    <use href="./images/icons.svg#icon-antenna-1"></use>
+                                </svg>
+                            </div>
+                            <div class="second-section-text-container">
+                                <h3 class="section-title">Strategy</h3>
+                                    <p class="description">
+                                        Our goal is to identify the business problem to walk away with
+                                        the perfect and creative solution.
+                                    </p>
+                            </div>
+                        </li>
+
                     <li class="second-section-list-two">
                             <div class="second-section-icon">
                                 <svg width="64" height="64">
                                     <use href="./images/icons.svg#icon-clock-1"></use>
                                 </svg>
                             </div>
-                        <h3 class="section-title">Punctuality</h3>
-                        <p class="description">
-                            Bring the key message to the brand's audience for the best price
-                            within the shortest possible time.
-                        </p>
+                        <div class="second-section-text-container">
+                            <h3 class="section-title">Punctuality</h3>
+                                <p class="description">
+                                    Bring the key message to the brand's audience for the best price
+                                    within the shortest possible time.
+                                </p>
+                        </div>
                     </li>
                     <li class="second-section-list-two">
                         <div class="second-section-icon">
@@ -90,11 +104,13 @@
                                 <use href="./images/icons.svg#icon-diagram-1"></use>
                             </svg>
                         </div>
-                        <h3 class="section-title">Diligence</h3>
-                        <p class="description">
-                            Research and confirm brands that present the strongest digital
-                            growth opportunities and minimize risk.
-                        </p>
+                        <div class="second-section-text-container">
+                            <h3 class="section-title">Diligence</h3>
+                            <p class="description">
+                                Research and confirm brands that present the strongest digital
+                                growth opportunities and minimize risk.
+                            </p>
+                         </div>   
                     </li>
                     <li class="second-section-list-two">
                         <div class="second-section-icon">
@@ -102,11 +118,13 @@
                                 <use href="./images/icons.svg#icon-astronaut-1"></use>
                             </svg>
                         </div>
-                        <h3 class="section-title">Technologies</h3>
-                        <p class="description">
-                            Design practice focused on digital experiences. We bring forth a
-                            deep passion for problem-solving.
-                        </p>
+                        <div class="second-section-text-container">
+                            <h3 class="section-title">Technologies</h3>
+                            <p class="description">
+                                Design practice focused on digital experiences. We bring forth a
+                                deep passion for problem-solving.
+                            </p>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -398,150 +416,154 @@
     
     <footer class="footer">
         <div class="footer-container container ">
-            <div class="footer-logo-p-container">
-                <a href="./index.html" class="logo footer-logo">Web<span class="footer-logo-span">Studio</span></a>
-                <p class="footer-p">
-                    Increase the flow of customers and sales for your business with
-                    digital marketing & growth solutions.
-                </p>                
+            <div class="footer-text-socials-container">
+                <div class="footer-logo-p-container">
+                    <a href="./index.html" class="logo footer-logo">Web<span class="footer-logo-span">Studio</span></a>
+                    <p class="footer-p">
+                        Increase the flow of customers and sales for your business with
+                        digital marketing & growth solutions.
+                    </p>                
+                </div>
+
+                
+
+
+                <div class="footer-socials-container">
+                    <p class="footer-socials-title">Social media</p>
+                    <ul class="footer-socials-list">
+                        <li class="footer-socials-list-item">
+                            <a href="" class="footer-socials-link">
+                                <svg width="24" height="24" class="footer-socials-icon">
+                                    <use href="./images/icons.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                
+                        <li class="footer-socials-list-item">
+                            <a href="" class="footer-socials-link">
+                                <svg width="24" height="24" class="footer-socials-icon">
+                                    <use href="./images/icons.svg#icon-twitter-1"></use>
+                                </svg>
+                            </a>
+                        </li>
+                
+                        <li class="footer-socials-list-item">
+                            <a href="" class="footer-socials-link">
+                                <svg width="24" height="24" class="footer-socials-icon">
+                                    <use href="./images/icons.svg#icon-facebook-1"></use>
+                                </svg>
+                            </a>
+                        </li>
+                
+                        <li class="footer-socials-list-item">
+                            <a href="" class="footer-socials-link">
+                                    <svg width="24" height="24" class="footer-socials-icon">
+                                        <use href="./images/icons.svg#icon-linkedin-1"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                    <div class="footer-form-container">
+                        <p class="footer-form-text">Subscribe</p>
+                        <form class="footer-mail-form">
+                            <label for="email" class="footer-mail-label">
+                                <input type="email" name="email" placeholder="E-mail" class="footer-mail-input" id="email" />
+                            </label>
+                            <button class="footer-mail-button" type="submit">Subscribe
+                                <svg class="footer-mail-svg" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-icon-send"></use>
+                                </svg>
+                            </button>
+                        </form>
+                    
+                </div>
             </div>
 
-
-            <div class="footer-socials-container">
-                <p class="footer-socials-title">Social media</p>
-                <ul class="footer-socials-list">
-                    <li class="footer-socials-list-item">
-                        <a href="" class="footer-socials-link">
-                            <svg width="24" height="24" class="footer-socials-icon">
-                                <use href="./images/icons.svg#icon-instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-            
-                    <li class="footer-socials-list-item">
-                        <a href="" class="footer-socials-link">
-                            <svg width="24" height="24" class="footer-socials-icon">
-                                <use href="./images/icons.svg#icon-twitter-1"></use>
-                            </svg>
-                        </a>
-                    </li>
-            
-                    <li class="footer-socials-list-item">
-                        <a href="" class="footer-socials-link">
-                            <svg width="24" height="24" class="footer-socials-icon">
-                                <use href="./images/icons.svg#icon-facebook-1"></use>
-                            </svg>
-                        </a>
-                    </li>
-            
-                    <li class="footer-socials-list-item">
-                        <a href="" class="footer-socials-link">
-                            <svg width="24" height="24" class="footer-socials-icon">
-                                <use href="./images/icons.svg#icon-linkedin-1"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
-
-        <div class="footer-form-container">
-            <p class="footer-form-text">Subscribe</p>
-            <form class="footer-mail-form">
-                <label class="footer-mail-label">
-                    <input class="footer-mail-input" type="email" name="mail" placeholder="E-mail">
-                </label>
-        
-                <button class="footer-mail-button" type="submit">Subscribe
-                    <svg class="footer-mail-svg" width="24" height="24">
-                        <use href="./images/icons.svg#icon-icon-send"></use>
-                    </svg>
-                </button>
-            </form>
+           
         </div>
-    </div>
-
-        
 
     </footer>
 
 
-    
+        
 
-    
-    <div class="form-page-container">
-        <div class="form-page">
-            <button class="form-page-button-x" type="button">
-                <svg class="icon-close-svg" width="8" height="8">
-                    <use href="./images/icons.svg#icon-close-black"></use>
-                </svg>
-            </button>
-    
-            <p class="form-page-title">
-                Leave your contacts and we will call you back
-            </p>
-    
-            <form>
-                <div class="form-list">
-                    <label class="form-list-label" for="user-name">Name</label>
-                    <div class="inputs-icons">
-                        <input type="text" id="user-name" name="user-name" class="form-input" />
-    
-                        <svg class="inputs-icons-svg" width="18" height="24">
-                            <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
-                        </svg>
-                    </div>
-                </div>
-    
-                <div class="form-list">
-                    <label class="form-list-label" for="user-phone">
-                        Phone</label>
-                    <div class="inputs-icons">
-                        <input type="tel" id="user-phone" name="user-phone" class="form-input" />
-    
-                        <svg class="inputs-icons-svg" width="18" height="24">
-                            <use href="./images/icons.svg#icon-phone"></use>
-                        </svg>
-                    </div>
-                </div>
-    
-                <div class="form-list">
-                    <label class="form-list-label" for="user-mail">
-                        Email</label>
-                    <div class="inputs-icons">
-                        <input type="email" id="user-mail" name="user-mail" class="form-input" />
-    
-                        <svg class="inputs-icons-svg" width="18" height="24">
-                            <use href="./images/icons.svg#icon-Vector"></use>
-                        </svg>
-                    </div>
-                </div>
-    
-                <div class="form-list-text-container">
-                    <label for="user-comment" class="form-list-label">Comment</label>
-                    <textarea name="user-comment" id="user-comment" placeholder="Text input" class="text-area"></textarea>
-                </div>
-    
-                <div class="checkbox-container">
-                    <input type="checkbox" id="user-privacy" value="true" name="user-privacy"
-                        class="privacy-checkbox visually-hidden" />
-                    <label for="user-privacy" class="privacy-label">
-                        <span class="privacy-span">
-                            <svg width="10" height="8" class="span-svg">
-                                <use href="./images/icons.svg#icon-Vector-1"></use>
-                            </svg>
-                        </span>
-                        I accept the terms and conditions of the
-                        <a href="" class="privacy-link">Privacy Policy</a>
-                    </label>
-                </div>
-    
-                <button type="submit" class="form-list-buton buton">
-                    SEND
+        
+        <div class="form-page-container">
+            <div class="form-page">
+                <button class="form-page-button-x" type="button">
+                    <svg class="icon-close-svg" width="8" height="8">
+                        <use href="./images/icons.svg#icon-close-black"></use>
+                    </svg>
                 </button>
-            </form>
+        
+                <p class="form-page-title">
+                    Leave your contacts and we will call you back
+                </p>
+        
+                <form>
+                    <div class="form-list">
+                        <label class="form-list-label" for="user-name">Name</label>
+                        <div class="inputs-icons">
+                            <input type="text" id="user-name" name="user-name" class="form-input" />
+        
+                            <svg class="inputs-icons-svg" width="18" height="24">
+                                <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
+                            </svg>
+                        </div>
+                    </div>
+        
+                    <div class="form-list">
+                        <label class="form-list-label" for="user-phone">
+                            Phone</label>
+                        <div class="inputs-icons">
+                            <input type="tel" id="user-phone" name="user-phone" class="form-input" />
+        
+                            <svg class="inputs-icons-svg" width="18" height="24">
+                                <use href="./images/icons.svg#icon-phone"></use>
+                            </svg>
+                        </div>
+                    </div>
+        
+                    <div class="form-list">
+                        <label class="form-list-label" for="user-mail">
+                            Email</label>
+                        <div class="inputs-icons">
+                            <input type="email" id="user-mail" name="user-mail" class="form-input" />
+        
+                            <svg class="inputs-icons-svg" width="18" height="24">
+                                <use href="./images/icons.svg#icon-Vector"></use>
+                            </svg>
+                        </div>
+                    </div>
+        
+                    <div class="form-list-text-container">
+                        <label for="user-comment" class="form-list-label">Comment</label>
+                        <textarea name="user-comment" id="user-comment" placeholder="Text input" class="text-area"></textarea>
+                    </div>
+        
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="user-privacy" value="true" name="user-privacy"
+                            class="privacy-checkbox visually-hidden" />
+                        <label for="user-privacy" class="privacy-label">
+                            <span class="privacy-span">
+                                <svg width="10" height="8" class="span-svg">
+                                    <use href="./images/icons.svg#icon-Vector-1"></use>
+                                </svg>
+                            </span>
+                            I accept the terms and conditions of the
+                            <a href="" class="privacy-link">Privacy Policy</a>
+                        </label>
+                    </div>
+        
+                    <button type="submit" class="form-list-buton buton">
+                        SEND
+                    </button>
+                </form>
+            </div>
         </div>
-    </div>
 
 </body>
 

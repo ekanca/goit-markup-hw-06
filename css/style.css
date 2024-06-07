@@ -23,8 +23,7 @@ body {
 .container {
     width: 1158px;
     margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 0 15px;
 }
 
 img {
@@ -82,17 +81,21 @@ a {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
-    margin-right: 76px;
 }
 
 .logo-span {
     color: #2e2f42;
 }
 
-.nav-list {
+.nav-list-one {
     display: flex;
     gap: 40px;
     margin-left: 76px;
+}
+.nav-list {
+    display: flex;
+    gap: 40px;
+
 }
 
 .nav-link {
@@ -129,6 +132,8 @@ a {
 }
 
 .nav-contact {
+    display: flex;
+    gap: 40px;
     font-style: normal;
 }
 
@@ -388,6 +393,12 @@ margin-bottom: 8px;
     padding: 100px 0;
 }
 
+.footer-container {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
 .footer-p {
     line-height: 1.5;
     color: #f4f4fd;
@@ -395,10 +406,6 @@ margin-bottom: 8px;
     max-width: 264px;
 }
 
-.footer-container {
-    display: flex;
-    align-items: baseline;
-}
 
 .footer-logo {
     display: inline-block;
@@ -453,6 +460,13 @@ margin-bottom: 8px;
 
 .footer-socials-icon {
     fill: #f4f4fd;
+}
+
+.footer-text-socials-container {
+    display: flex;
+    align-items: baseline;
+    gap: 24px;
+    margin-bottom: 72px;
 }
 
 .footer-form-text {
@@ -518,6 +532,8 @@ margin-bottom: 8px;
     background-color: rgba(46, 47, 66, 0.4);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
         visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+     display: none;
+
 }
 
 .form-page {
@@ -696,4 +712,11 @@ margin-bottom: 8px;
     border: none;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     margin: auto;
+}
+
+
+.hamburgerbutton {
+    display: none;
+    background: none;
+    border: none;
 }
