@@ -45,9 +45,8 @@
     }
 
     .footer-socials-list {
-        flex-direction: column;
-        align-items: center;
         display: flex;
+        gap: 16px;
     }
 
     .footer-socials-container {

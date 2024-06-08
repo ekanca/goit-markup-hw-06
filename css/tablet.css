@@ -46,6 +46,7 @@
         flex-wrap: wrap;
         width: 100%;
         max-width: 736px;
+        justify-content: center;
     }
 
 
@@ -60,6 +61,7 @@
 
     .third-section-list {
         flex-wrap: wrap;
+        justify-content: center;
     }
 
 
